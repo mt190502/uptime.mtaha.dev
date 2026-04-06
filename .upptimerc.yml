@@ -4,8 +4,8 @@ repo: uptime.mtaha.dev
 
 sites:
   - name: Anki Sync Server
-    url: https://anki.mtaha.dev
-    expectedStatusCodes: [200]
+    url: https://anki.mtaha.dev/sync/beta
+    expectedStatusCodes: [405]
   - name: Miniflux
     url: https://rss.mtaha.dev
     expectedStatusCodes: [200]
@@ -21,7 +21,6 @@ sites:
   - name: Umami
     url: https://umami.mtaha.dev
     expectedStatusCodes: [200]
-
 status-website:
   cname: uptime.mtaha.dev
   logoUrl: https://avatars.githubusercontent.com/u/62564400
