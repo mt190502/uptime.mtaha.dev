@@ -2,6 +2,18 @@
 owner: mt190502
 repo: uptime.mtaha.dev
 
+status-website:
+  cname: uptime.mtaha.dev
+  logoUrl: https://avatars.githubusercontent.com/u/62564400
+  name: uptime.mtaha.dev
+  introTitle: "**uptime.mtaha.dev** is uptime monitor for my infrastructure"
+  introMessage: k8s.tf's Uptime Monitor
+  navbar:
+    - title: Infra
+      href: https://github.com/$OWNER/k8s.tf
+    - title: Source
+      href: https://github.com/$OWNER/$REPO
+
 sites:
   - name: Anki Sync Server
     url: https://anki.mtaha.dev/sync/beta
@@ -21,16 +33,3 @@ sites:
   - name: Umami
     url: https://umami.mtaha.dev
     expectedStatusCodes: [200]
-status-website:
-  cname: uptime.mtaha.dev
-  logoUrl: https://avatars.githubusercontent.com/u/62564400
-  name: uptime.mtaha.dev
-  introTitle: "**uptime.mtaha.dev** is uptime monitor for my infrastructure"
-  introMessage: k8s.tf's Uptime Monitor
-  navbar:
-    - title: Status
-      href: /
-    - title: Infra
-      href: https://github.com/$OWNER/k8s.tf
-    - title: Source
-      href: https://github.com/$OWNER/$REPO
