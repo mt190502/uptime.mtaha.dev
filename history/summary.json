@@ -1,22 +1,22 @@
 [
   {
     "name": "Anki Sync Server",
-    "url": "https://anki.mtaha.dev",
+    "url": "https://anki.mtaha.dev/sync/beta",
     "icon": "https://icons.duckduckgo.com/ip3/anki.mtaha.dev.ico",
     "slug": "anki-sync-server",
-    "status": "down",
-    "uptime": "0.17%",
-    "uptimeDay": "0.17%",
-    "uptimeWeek": "0.17%",
-    "uptimeMonth": "0.17%",
-    "uptimeYear": "0.17%",
-    "time": 762,
-    "timeDay": 762,
-    "timeWeek": 762,
-    "timeMonth": 762,
-    "timeYear": 762,
+    "status": "up",
+    "uptime": "28.81%",
+    "uptimeDay": "28.81%",
+    "uptimeWeek": "28.81%",
+    "uptimeMonth": "28.81%",
+    "uptimeYear": "28.81%",
+    "time": 783,
+    "timeDay": 783,
+    "timeWeek": 783,
+    "timeMonth": 783,
+    "timeYear": 783,
     "dailyMinutesDown": {
-      "2026-04-06": 6
+      "2026-04-06": 30
     }
   },
   {
@@ -30,11 +30,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 973,
-    "timeDay": 973,
-    "timeWeek": 973,
-    "timeMonth": 973,
-    "timeYear": 973,
+    "time": 980,
+    "timeDay": 980,
+    "timeWeek": 980,
+    "timeMonth": 980,
+    "timeYear": 980,
     "dailyMinutesDown": {}
   },
   {
@@ -48,11 +48,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 883,
-    "timeDay": 883,
-    "timeWeek": 883,
-    "timeMonth": 883,
-    "timeYear": 883,
+    "time": 923,
+    "timeDay": 923,
+    "timeWeek": 923,
+    "timeMonth": 923,
+    "timeYear": 923,
     "dailyMinutesDown": {}
   },
   {
@@ -66,11 +66,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1116,
-    "timeDay": 1116,
-    "timeWeek": 1116,
-    "timeMonth": 1116,
-    "timeYear": 1116,
+    "time": 1125,
+    "timeDay": 1125,
+    "timeWeek": 1125,
+    "timeMonth": 1125,
+    "timeYear": 1125,
     "dailyMinutesDown": {}
   },
   {
@@ -84,11 +84,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1081,
-    "timeDay": 1081,
-    "timeWeek": 1081,
-    "timeMonth": 1081,
-    "timeYear": 1081,
+    "time": 1001,
+    "timeDay": 1001,
+    "timeWeek": 1001,
+    "timeMonth": 1001,
+    "timeYear": 1001,
     "dailyMinutesDown": {}
   },
   {
@@ -102,11 +102,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 704,
-    "timeDay": 704,
-    "timeWeek": 704,
-    "timeMonth": 704,
-    "timeYear": 704,
+    "time": 722,
+    "timeDay": 722,
+    "timeWeek": 722,
+    "timeMonth": 722,
+    "timeYear": 722,
     "dailyMinutesDown": {}
   }
 ]
