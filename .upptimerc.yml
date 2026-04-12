@@ -18,6 +18,9 @@ sites:
   - name: Anki Sync Server
     url: https://anki.mtaha.dev/sync/beta
     expectedStatusCodes: [405]
+  - name: Atlantis
+    url: https://atlantis.mtaha.dev/events
+    expectedStatusCodes: [200, 401, 403, 405]
   - name: Miniflux
     url: https://rss.mtaha.dev
     expectedStatusCodes: [200]
