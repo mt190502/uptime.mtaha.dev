@@ -21,6 +21,9 @@ sites:
   - name: Atlantis
     url: https://atlantis.mtaha.dev/events
     expectedStatusCodes: [200, 401, 403, 405]
+  - name: Grafana
+    url: https://dash.mtaha.dev
+    expectedStatusCodes: [200]
   - name: Miniflux
     url: https://rss.mtaha.dev
     expectedStatusCodes: [200]
