@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/anki.mtaha.dev.ico",
     "slug": "anki-sync-server",
     "status": "up",
-    "uptime": "99.62%",
+    "uptime": "99.63%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "99.46%",
-    "uptimeMonth": "99.62%",
-    "uptimeYear": "99.62%",
+    "uptimeMonth": "99.63%",
+    "uptimeYear": "99.63%",
     "time": 759,
     "timeDay": 776,
     "timeWeek": 797,
@@ -133,9 +133,9 @@
     "url": "https://umami.mtaha.dev",
     "icon": "https://icons.duckduckgo.com/ip3/umami.mtaha.dev.ico",
     "slug": "umami",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -144,6 +144,8 @@
     "timeWeek": 777,
     "timeMonth": 732,
     "timeYear": 732,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-04-22": 0
+    }
   }
 ]
