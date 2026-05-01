@@ -64,19 +64,19 @@
     "url": "https://rss.mtaha.dev",
     "icon": "https://icons.duckduckgo.com/ip3/rss.mtaha.dev.ico",
     "slug": "miniflux",
-    "status": "down",
-    "uptime": "99.79%",
-    "uptimeDay": "94.80%",
-    "uptimeWeek": "99.26%",
-    "uptimeMonth": "99.79%",
-    "uptimeYear": "99.79%",
-    "time": 959,
-    "timeDay": 851,
-    "timeWeek": 848,
-    "timeMonth": 959,
-    "timeYear": 959,
+    "status": "up",
+    "uptime": "99.59%",
+    "uptimeDay": "89.79%",
+    "uptimeWeek": "98.54%",
+    "uptimeMonth": "99.59%",
+    "uptimeYear": "99.59%",
+    "time": 962,
+    "timeDay": 919,
+    "timeWeek": 871,
+    "timeMonth": 962,
+    "timeYear": 962,
     "dailyMinutesDown": {
-      "2026-05-01": 75
+      "2026-05-01": 147
     }
   },
   {
