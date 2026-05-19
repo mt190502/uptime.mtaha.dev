@@ -80,6 +80,26 @@
     }
   },
   {
+    "name": "Mozilla Syncstorage",
+    "url": "https://ffsync.mtaha.dev/__heartbeat__",
+    "icon": "https://icons.duckduckgo.com/ip3/ffsync.mtaha.dev.ico",
+    "slug": "mozilla-syncstorage",
+    "status": "up",
+    "uptime": "0.00%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "0.00%",
+    "uptimeMonth": "0.00%",
+    "uptimeYear": "0.00%",
+    "time": 505,
+    "timeDay": 505,
+    "timeWeek": 505,
+    "timeMonth": 505,
+    "timeYear": 505,
+    "dailyMinutesDown": {
+      "2026-05-19": 6
+    }
+  },
+  {
     "name": "Nightscout",
     "url": "https://t1d.mtaha.dev",
     "icon": "https://icons.duckduckgo.com/ip3/t1d.mtaha.dev.ico",
