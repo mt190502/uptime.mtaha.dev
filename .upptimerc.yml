@@ -29,7 +29,7 @@ sites:
     expectedStatusCodes: [200]
   - name: Mozilla Syncstorage
     url: https://ffsync.mtaha.dev/__heartbeat__
-    expectedStatusCodes: [405]
+    expectedStatusCodes: [200]
   - name: Nightscout
     url: https://t1d.mtaha.dev
     expectedStatusCodes: [200]
