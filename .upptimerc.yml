@@ -27,6 +27,9 @@ sites:
   - name: Miniflux
     url: https://rss.mtaha.dev
     expectedStatusCodes: [200]
+  - name: Mozilla Syncstorage
+    url: https://ffsync.mtaha.dev/__heartbeat__
+    expectedStatusCodes: [405]
   - name: Nightscout
     url: https://t1d.mtaha.dev
     expectedStatusCodes: [200]
