@@ -21,7 +21,7 @@ sites:
   - name: Atlantis
     url: https://atlantis.mtaha.dev/events
     expectedStatusCodes: [200, 401, 403, 405]
-  - name: gotify
+  - name: Gotify
     url: https://ntfy.mtaha.dev
     expectedStatusCodes: [200]
   - name: Grafana
