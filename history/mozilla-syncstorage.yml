@@ -1,7 +1,7 @@
 url: https://ffsync.mtaha.dev/__heartbeat__
-status: down
-code: 503
-responseTime: 549
-lastUpdated: 2026-07-23T19:42:59.747Z
+status: up
+code: 200
+responseTime: 864
+lastUpdated: 2026-07-23T20:45:16.691Z
 startTime: 2026-05-19T08:49:33.623Z
 generator: Upptime <https://github.com/upptime/upptime>
