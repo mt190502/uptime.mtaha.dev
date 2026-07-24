@@ -1,7 +1,7 @@
 url: https://anki.mtaha.dev/sync/beta
-status: up
-code: 405
-responseTime: 618
-lastUpdated: 2026-07-23T23:51:34.004Z
+status: down
+code: 503
+responseTime: 211
+lastUpdated: 2026-07-24T09:40:32.709Z
 startTime: 2026-04-06T18:01:27.164Z
 generator: Upptime <https://github.com/upptime/upptime>
