@@ -1,6 +1,9 @@
-# Change these first
 owner: mt190502
 repo: uptime.mtaha.dev
+skipDeleteIssues: true
+
+assignees:
+  - mt190502
 
 status-website:
   cname: uptime.mtaha.dev
