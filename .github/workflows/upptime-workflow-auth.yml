@@ -1,0 +1,54 @@
+name: Sync Upptime Workflow Authentication
+
+on:
+  workflow_run:
+    workflows: ["Setup CI", "Update Template CI"]
+    types: [completed]
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          token: ${{ secrets.UPPTIME_WORKFLOW_PAT }}
+
+      - name: Keep PAT limited to workflow updates
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          export GITHUB_TOKEN_EXPR='$'"{{ github.token }}"
+          export WORKFLOW_PAT_EXPR='$'"{{ secrets.UPPTIME_WORKFLOW_PAT }}"
+          export REF_EXPR='$'"{{ github.head_ref || github.ref_name }}"
+
+          for workflow in graphs response-time site summary updates uptime; do
+            perl -0pi -e 's/\x24\{\{ secrets\.GH_PAT \|\| github\.token \}\}/$ENV{GITHUB_TOKEN_EXPR}/g' ".github/workflows/${workflow}.yml"
+          done
+
+          perl -0pi -e 's/\x24\{\{ secrets\.GH_PAT \|\| github\.token \}\}/$ENV{WORKFLOW_PAT_EXPR}/g' ".github/workflows/update-template.yml"
+
+          perl -0pi -e 's/\x24\{\{ secrets\.GH_PAT \|\| github\.token \}\}/$ENV{GITHUB_TOKEN_EXPR}/g' ".github/workflows/setup.yml"
+          if ! grep -q "Checkout with workflow PAT" ".github/workflows/setup.yml"; then
+            perl -0pi -e 's{(      - name: Update template\n)}{sprintf("      - name: Checkout with workflow PAT\n        uses: actions/checkout\@v6\n        with:\n          ref: %s\n          token: %s\n          clean: false\n%s", $ENV{REF_EXPR}, $ENV{WORKFLOW_PAT_EXPR}, $1)}e' ".github/workflows/setup.yml"
+          fi
+          perl -0pi -e 's/(          GH_PAT: )\x24\{\{ github\.token \}\}(?=\n      - name: Update response time)/$1 . $ENV{WORKFLOW_PAT_EXPR}/e' ".github/workflows/setup.yml"
+          if ! grep -q "Checkout with GITHUB_TOKEN" ".github/workflows/setup.yml"; then
+            perl -0pi -e 's{(      - name: Update response time\n)}{sprintf("      - name: Checkout with GITHUB_TOKEN\n        uses: actions/checkout\@v6\n        with:\n          ref: %s\n          token: %s\n          clean: false\n%s", $ENV{REF_EXPR}, $ENV{GITHUB_TOKEN_EXPR}, $1)}e' ".github/workflows/setup.yml"
+          fi
+
+          if git diff --quiet; then
+            exit 0
+          fi
+
+          git config user.name "Upptime Workflow Sync"
+          git config user.email "73812536+upptime-bot@users.noreply.github.com"
+          git add .github/workflows
+          git commit -m "ci: limit Upptime PAT usage"
+          git push
