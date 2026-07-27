@@ -194,20 +194,21 @@
     "url": "https://files.mtaha.dev",
     "icon": "https://icons.duckduckgo.com/ip3/files.mtaha.dev.ico",
     "slug": "slim-serve",
-    "status": "up",
+    "status": "down",
     "uptime": "99.78%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "98.43%",
     "uptimeMonth": "99.64%",
     "uptimeYear": "99.78%",
-    "time": 1087,
-    "timeDay": 852,
-    "timeWeek": 1163,
-    "timeMonth": 1121,
-    "timeYear": 1087,
+    "time": 1077,
+    "timeDay": 763,
+    "timeWeek": 1122,
+    "timeMonth": 1105,
+    "timeYear": 1077,
     "dailyMinutesDown": {
       "2026-07-25": 92,
-      "2026-07-26": 66
+      "2026-07-26": 66,
+      "2026-07-27": 0
     }
   },
   {
