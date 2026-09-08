@@ -48,12 +48,24 @@ jobs:
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
+      - name: Checkout with workflow PAT
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ secrets.UPPTIME_WORKFLOW_PAT }}
+          clean: false
       - name: Update template
         uses: upptime/uptime-monitor@v1.44.0
         with:
           command: "update-template"
         env:
           GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
+      - name: Checkout with GITHUB_TOKEN
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          token: ${{ github.token }}
+          clean: false
       - name: Update response time
         uses: upptime/uptime-monitor@v1.44.0
         with:
