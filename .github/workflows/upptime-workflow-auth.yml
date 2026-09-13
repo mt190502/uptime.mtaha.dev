@@ -2,7 +2,7 @@ name: Sync Upptime Workflow Authentication
 
 on:
   workflow_run:
-    workflows: ["Setup CI", "Update Template CI"]
+    workflows: ["Setup CI", "Update Template CI", "Updates CI"]
     types: [completed]
 
 permissions:
@@ -29,12 +29,12 @@ jobs:
           export REF_EXPR='$'"{{ github.head_ref || github.ref_name }}"
 
           for workflow in graphs response-time site summary updates uptime; do
-            perl -0pi -e 's/\x24\{\{ secrets\.GH_PAT \|\| github\.token \}\}/$ENV{GITHUB_TOKEN_EXPR}/g' ".github/workflows/${workflow}.yml"
+            perl -0pi -e 's/\x24\{\{ (?:steps\.app_token\.outputs\.token \|\| )?secrets\.GH_PAT \|\| github\.token \}\}/$ENV{GITHUB_TOKEN_EXPR}/g' ".github/workflows/${workflow}.yml"
           done
 
-          perl -0pi -e 's/\x24\{\{ secrets\.GH_PAT \|\| github\.token \}\}/$ENV{WORKFLOW_PAT_EXPR}/g' ".github/workflows/update-template.yml"
+          perl -0pi -e 's/\x24\{\{ (?:steps\.app_token\.outputs\.token \|\| )?secrets\.GH_PAT \|\| github\.token \}\}/$ENV{WORKFLOW_PAT_EXPR}/g' ".github/workflows/update-template.yml"
 
-          perl -0pi -e 's/\x24\{\{ secrets\.GH_PAT \|\| github\.token \}\}/$ENV{GITHUB_TOKEN_EXPR}/g' ".github/workflows/setup.yml"
+          perl -0pi -e 's/\x24\{\{ (?:steps\.app_token\.outputs\.token \|\| )?secrets\.GH_PAT \|\| github\.token \}\}/$ENV{GITHUB_TOKEN_EXPR}/g' ".github/workflows/setup.yml"
           if ! grep -q "Checkout with workflow PAT" ".github/workflows/setup.yml"; then
             perl -0pi -e 's{(      - name: Update template\n)}{sprintf("      - name: Checkout with workflow PAT\n        uses: actions/checkout\@v6\n        with:\n          ref: %s\n          token: %s\n          clean: false\n%s", $ENV{REF_EXPR}, $ENV{WORKFLOW_PAT_EXPR}, $1)}e' ".github/workflows/setup.yml"
           fi
