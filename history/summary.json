@@ -94,18 +94,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/md.mtaha.dev.ico",
     "slug": "hedge-doc",
     "status": "down",
-    "uptime": "45.03%",
-    "uptimeDay": "45.03%",
-    "uptimeWeek": "45.03%",
-    "uptimeMonth": "45.03%",
-    "uptimeYear": "45.03%",
+    "uptime": "31.65%",
+    "uptimeDay": "31.65%",
+    "uptimeWeek": "31.65%",
+    "uptimeMonth": "31.65%",
+    "uptimeYear": "31.65%",
     "time": 593,
     "timeDay": 593,
     "timeWeek": 593,
     "timeMonth": 593,
     "timeYear": 593,
     "dailyMinutesDown": {
-      "2026-09-19": 0
+      "2026-09-19": 1
     }
   },
   {
