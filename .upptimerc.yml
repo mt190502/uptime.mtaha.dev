@@ -30,6 +30,9 @@ sites:
   - name: Grafana
     url: https://dash.mtaha.dev
     expectedStatusCodes: [200]
+  - name: HedgeDoc
+    url: https://md.mtaha.dev
+    expectedStatusCodes: [200]
   - name: Miniflux
     url: https://rss.mtaha.dev
     expectedStatusCodes: [200]
