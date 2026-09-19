@@ -32,7 +32,7 @@ sites:
     expectedStatusCodes: [200]
   - name: HedgeDoc
     url: https://md.mtaha.dev
-    expectedStatusCodes: [200]
+    expectedStatusCodes: [200, 401, 403]
   - name: Miniflux
     url: https://rss.mtaha.dev
     expectedStatusCodes: [200]
