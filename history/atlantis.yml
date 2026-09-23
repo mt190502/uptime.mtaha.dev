@@ -1,7 +1,7 @@
 url: https://atlantis.mtaha.dev/events
-status: down
-code: 503
-responseTime: 165
-lastUpdated: 2026-09-23T01:48:48.311Z
+status: up
+code: 405
+responseTime: 590
+lastUpdated: 2026-09-23T06:52:52.250Z
 startTime: 2026-04-12T17:08:34.657Z
 generator: Upptime <https://github.com/upptime/upptime>
