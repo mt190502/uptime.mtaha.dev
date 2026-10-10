@@ -30,9 +30,6 @@ sites:
   - name: Grafana
     url: https://dash.mtaha.dev
     expectedStatusCodes: [200]
-  - name: HedgeDoc
-    url: https://md.mtaha.dev
-    expectedStatusCodes: [200, 401, 403]
   - name: Miniflux
     url: https://rss.mtaha.dev
     expectedStatusCodes: [200]
@@ -42,11 +39,17 @@ sites:
   - name: Nightscout
     url: https://t1d.mtaha.dev
     expectedStatusCodes: [200]
+  - name: PicoShare
+    url: https://link.mtaha.dev
+    expectedStatusCodes: [200, 302]
   - name: Radicale
     url: https://dav.mtaha.dev
     expectedStatusCodes: [200]
   - name: Redmine
     url: https://red.mtaha.dev
+    expectedStatusCodes: [200, 401, 403]
+  - name: SilverBullet
+    url: https://md.mtaha.dev
     expectedStatusCodes: [200, 401, 403]
   - name: SlimServe
     url: https://files.mtaha.dev
