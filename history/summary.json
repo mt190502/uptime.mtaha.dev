@@ -181,9 +181,9 @@
     "slug": "radicale",
     "status": "down",
     "uptime": "99.93%",
-    "uptimeDay": "99.05%",
-    "uptimeWeek": "99.86%",
-    "uptimeMonth": "99.97%",
+    "uptimeDay": "98.60%",
+    "uptimeWeek": "99.80%",
+    "uptimeMonth": "99.95%",
     "uptimeYear": "99.93%",
     "time": 1614,
     "timeDay": 58500,
@@ -194,7 +194,7 @@
       "2026-05-01": 75,
       "2026-07-25": 93,
       "2026-08-14": 39,
-      "2026-11-03": 14
+      "2026-11-03": 20
     }
   },
   {
