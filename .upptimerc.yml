@@ -53,7 +53,7 @@ sites:
     expectedStatusCodes: [200, 401, 403]
   - name: SlimServe
     url: https://files.mtaha.dev
-    expectedStatusCodes: [200, 401, 403]
+    expectedStatusCodes: [200]
   - name: Umami
     url: https://umami.mtaha.dev
     expectedStatusCodes: [200]
